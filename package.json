@@ -39,6 +39,7 @@
     "test": "npm run lint"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.4.4",
     "autobind-decorator": "^2.4.0",
     "lodash": "^4.17.11",
     "prop-types": "^15.7.2",

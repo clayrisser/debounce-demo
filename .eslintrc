@@ -2,5 +2,8 @@
   "extends": ["jam"],
   "globals": {
     "document": true
+  },
+  "rules": {
+    "react/no-access-state-in-setstate": "off"
   }
 }
