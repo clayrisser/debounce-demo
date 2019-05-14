@@ -1,0 +1,6 @@
+{
+  "extends": ["jam"],
+  "globals": {
+    "document": true
+  }
+}

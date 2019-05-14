@@ -1,0 +1,68 @@
+{
+  "name": "debounce-demo",
+  "version": "0.0.1",
+  "description": "debounce an asynchronous input",
+  "keywords": [
+    "debounce-demo",
+    "debounce",
+    "input",
+    "async",
+    "asynchronous"
+  ],
+  "homepage": "https://github.com/codejamninja/debounce-demo",
+  "bugs": {
+    "url": "https://github.com/codejamninja/debounce-demo/issues",
+    "email": "jam@codejam.ninja"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jam Risser",
+    "email": "jam@codejam.ninja",
+    "url": "https://codejam.ninja"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codejamninja/debounce-demo"
+  },
+  "scripts": {
+    "build": "npm run test && babel src -d lib",
+    "clean": "git clean -fXd -e \\!node_modules -e \\!node_modules/**/*",
+    "clean:purge": "git clean -fXd",
+    "format": "prettier --write ./src/**/*.js",
+    "lint": "npm run format && eslint ./",
+    "lint:fix": "npm run format && eslint --fix ./",
+    "start": "parcel src/index.html",
+    "test": "npm run lint"
+  },
+  "dependencies": {
+    "autobind-decorator": "^2.4.0",
+    "lodash": "^4.17.11",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "babel-preset-jam": "^0.1.0",
+    "eslint": "^5.9.0",
+    "eslint-config-jam": "^0.1.6",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "parcel-bundler": "^1.12.3",
+    "yo": "^2.0.5"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "eslintIgnore": [
+    ".cache",
+    "dist",
+    "lib"
+  ]
+}
