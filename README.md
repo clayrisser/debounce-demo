@@ -4,6 +4,8 @@
 
 > debounce an asynchronous input
 
+![](assets/debounce-demo.png)
+
 Please ★ this repo if you found it useful ★ ★ ★
 
 
